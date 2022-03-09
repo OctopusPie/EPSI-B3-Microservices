@@ -46,6 +46,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <!-- https://mvnrepository.com/artifact/io.spring.dependency-management/io.spring.dependency-management.gradle.plugin -->
+            <dependency>
+                <groupId>io.spring.dependency-management</groupId>
+                <artifactId>io.spring.dependency-management.gradle.plugin</artifactId>
+                <version>1.0.10.RELEASE</version>
+                <type>pom</type>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -54,6 +62,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.4.RELEASE</version>
             </plugin>
         </plugins>
     </build>
