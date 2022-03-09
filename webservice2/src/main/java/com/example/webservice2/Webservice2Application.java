@@ -1,24 +1,19 @@
 package com.example.webservice2;
-<<<<<<< Updated upstream
-=======
-
+import org.springframework.cloud.client.circuitbreaker.EnableCircuitBreaker;
 import org.springframework.cloud.client.discovery.DiscoveryClient;
->>>>>>> Stashed changes
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.ServiceInstance;
-<<<<<<< Updated upstream
-import org.springframework.cloud.client.discovery.DiscoveryClient;
-=======
->>>>>>> Stashed changes
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+import com.netflix.hystrix.contrib.javanica.annotation.HystrixCommand;
 
 import java.util.List;
 
+@EnableCircuitBreaker
 @SpringBootApplication
 public class Webservice2Application {
 
@@ -30,13 +25,10 @@ public class Webservice2Application {
     public class FrontwebserviceApplication {
         @Autowired
         DiscoveryClient discoveryClient;
+        @HystrixCommand(fallbackMethod = "defaultMessage")
         @GetMapping("/")
         public String hello() {
-<<<<<<< Updated upstream
             List<ServiceInstance> instances = discoveryClient.getInstances("name-of-the-microservice1");
-=======
-            List<ServiceInstance> instances = discoveryClient.getInstances("name-of-the- microservice1");
->>>>>>> Stashed changes
             ServiceInstance test = instances.get(0);
             String hostname = test.getHost();
             int port = test.getPort();
@@ -46,6 +38,9 @@ public class Webservice2Application {
                     restTemplate.getForEntity(microservice1Address, String.class);
             String s = response.getBody();
             return s;
+        }
+        public String defaultMessage() {
+            return "Salut !";
         }
     }
 
