@@ -1,6 +1,6 @@
 spring:
   application:
-    name: name-of-the-microservice1
+    name: name-of-the-microservice2
 eureka:
   client:
     serviceUrl:
