@@ -5,7 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9f9cbb70-6449-4e43-b4dd-f9e657a16624" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/microservice4/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice4/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/microservice4/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice4/src/main/java/com/example/microservice4/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/microservice4/src/main/java/com/example/microservice4/WebSecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/microservice4/src/main/resources/application.yaml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,19 +34,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
-    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="node.js.detected.package.eslint" value="true" />
-    <property name="node.js.detected.package.tslint" value="true" />
-    <property name="node.js.selected.package.eslint" value="(autodetect)" />
-    <property name="node.js.selected.package.tslint" value="(autodetect)" />
-  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/33614/OneDrive/Documents/EPSI-B3-Microservices/Registry"
+  }
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tlepo\Documents\GitHub\EPSI-B3-Microservices\Registry" />
@@ -70,6 +68,7 @@
       <workItem from="1646819497918" duration="315000" />
       <workItem from="1646819838874" duration="145000" />
       <workItem from="1646820003877" duration="1105000" />
+      <workItem from="1650037533483" duration="31000" />
     </task>
     <servers />
   </component>
@@ -86,6 +85,5 @@
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

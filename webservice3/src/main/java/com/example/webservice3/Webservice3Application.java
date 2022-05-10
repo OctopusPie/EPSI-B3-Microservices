@@ -14,7 +14,7 @@ public class Webservice3Application {
     @GetMapping("/")
     public void method() {
 
-        ServiceInstance serviceInstance = loadBalancer.choose("name-of-the- microservice1");
+        ServiceInstance serviceInstance = loadBalancer.choose("microservice1");
 
         System.out.println(serviceInstance.getUri());
     }

@@ -10,8 +10,12 @@ import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 public class WebSecurityConfig {
     @Bean
     public UserDetailsService userDetailsService() throws Exception {
-        UserDetails user =
-                User.withDefaultPasswordEncoder().username("user").password("password").roles("USER").build();
-        return new InMemoryUserDetailsManager(user);
+        UserDetails userDetails =
+                User.withDefaultPasswordEncoder()
+                        .username("user")
+                        .password("password")
+                        .roles("USER")
+                        .build();
+        return new InMemoryUserDetailsManager(userDetails);
     }
 }
